@@ -23,4 +23,17 @@ Steps:
 * `halt`
 * `step`
 
-Single-stepping fails and outputs "timeout waiting for target halt".
+Single-stepping fails and outputs "timeout waiting for target halt":
+
+```
+Open On-Chip Debugger
+> halt
+bcm2836.cpu0: MPIDR level2 0, cluster f, core 0, multi core, no SMT
+target halted in ARM state due to debug-request, current mode: Hypervisor
+cpsr: 0x000001da pc: 0x00008004
+MMU: disabled, D-Cache: disabled, I-Cache: disabled
+> step
+timeout waiting for target halt
+
+> 
+```
