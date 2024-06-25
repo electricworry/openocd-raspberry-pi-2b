@@ -2,8 +2,10 @@
 
 * Raspberry Pi 2 Model B v1.1
 * Running kernel7.img built in ./kernel
-* openocd v0.12.0 (built from source)
+* openocd master (built from source)
 * FTDI FT2232H mini-module
+* openocd is taken from master, except rpi2.cfg which is a modification of
+  rpi3.cfg to use bcm2836 instead of bcm2837
 
 Steps:
 * Use Raspberry Pi Imager to install 32-bit OS to SD card
@@ -18,7 +20,7 @@ Steps:
 * Build (`make all`) and copy kernel7.img to SD card
 * Connect FT2232H to Raspberry Pi
 * Power on Raspberry Pi
-* Run `make run-openocd` to connect to JTAG
+* Run `make run-openocd-rpi2` to connect to JTAG
 * Telnet to localhost:4444
 * `halt`
 * `step`
@@ -37,3 +39,6 @@ timeout waiting for target halt
 
 > 
 ```
+
+The problem does not occur targetting a Rspberry Pi 3B with
+`make run-openocf-rpi3`.

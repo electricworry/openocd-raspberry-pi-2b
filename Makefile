@@ -12,5 +12,8 @@ openocd/build/src/openocd:
 kernel:
 	make -C kernel
 
-run-openocd: openocd/build/src/openocd
+run-openocd-rpi2: openocd/build/src/openocd
 	openocd/build/src/openocd -f config/interface/ft2232h.cfg -f config/board/rpi2.cfg
+
+run-openocd-rpi3: openocd/build/src/openocd
+	openocd/build/src/openocd -f config/interface/ft2232h.cfg -f config/board/rpi3.cfg
