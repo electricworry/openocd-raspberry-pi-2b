@@ -4,8 +4,8 @@
 * Running kernel7.img built in ./kernel
 * openocd master (built from source)
 * FTDI FT2232H mini-module
-* openocd is taken from master, except rpi2.cfg which is a modification of
-  rpi3.cfg to use bcm2836 instead of bcm2837
+* openocd configs used are taken from master, except rpi2.cfg which is a
+  modification of rpi3.cfg to use bcm2836 instead of bcm2837
 
 Steps:
 * Use Raspberry Pi Imager to install 32-bit OS to SD card
@@ -40,5 +40,5 @@ timeout waiting for target halt
 > 
 ```
 
-The problem does not occur targetting a Rspberry Pi 3B with
+The problem does not occur targetting a Raspberry Pi 3B with
 `make run-openocf-rpi3`.
