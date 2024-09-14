@@ -42,3 +42,9 @@ timeout waiting for target halt
 
 The problem does not occur targetting a Raspberry Pi 3B with
 `make run-openocf-rpi3`.
+
+## Prerequisites
+
+* build-essential
+* libtool
+* libusb-1.0-0-dev
