@@ -1,3 +1,13 @@
+> targets
+targets
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0  bcm2837.ap         mem_ap     little bcm2837.cpu        running
+ 1* bcm2837.cpu0       aarch64    little bcm2837.cpu        running
+ 2  bcm2837.cpu1       aarch64    little bcm2837.cpu        running
+ 3  bcm2837.cpu2       aarch64    little bcm2837.cpu        running
+ 4  bcm2837.cpu3       aarch64    little bcm2837.cpu        running
+
 > dap info 0
 dap info 0
 AP # 0x0
